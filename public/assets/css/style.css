@@ -1,0 +1,54 @@
+.realisations-carousel .swiper-pagination-bullet {
+        background-color: white; /* Gris pour les points inactifs */
+        width: 10px;
+        height: 10px;
+        opacity: 0.8;
+    }
+
+    .realisations-carousel .swiper-pagination-bullet-active {
+        background-color: #EC673D ; /* Couleur de votre marque pour le point actif */
+        opacity: 1;
+    }
+
+    /* Ajuster la taille des icônes de flèche par défaut de Swiper */
+    .swiper-button-next::after, .swiper-button-prev::after {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .testimonials-carousel-single .swiper-pagination {
+        position: static;
+        margin-top: 2rem;
+    }
+    .testimonials-carousel-single .swiper-pagination-bullet {
+        background-color: #9ca3af;
+        width: 10px;
+        height: 10px;
+        opacity: 0.8;
+    }
+    .testimonials-carousel-single .swiper-pagination-bullet-active {
+        background-color: #316FB5;
+        opacity: 1;
+    }
+    /* Remplacement des flèches par défaut de Swiper par des SVGs plus élégants */
+    .swiper-button-prev-single, .swiper-button-next-single {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+    }
+    .swiper-button-prev-single::after, .swiper-button-next-single::after {
+        content: '';
+        display: block;
+        width: 3rem; /* 48px */
+        height: 3rem; /* 48px */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .swiper-button-prev-single::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15.75 19.5L8.25 12l7.5-7.5' /%3E%3C/svg%3E");
+    }
+    .swiper-button-next-single::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M8.25 4.5l7.5 7.5-7.5 7.5' /%3E%3C/svg%3E");
+    }

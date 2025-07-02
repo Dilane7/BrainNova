@@ -5,9 +5,12 @@
     <title>@yield('title', config('app.name', 'BrainNova'))</title>
     <link rel="shortcut icon" href="{{ asset('assets/img/Logo dilane 2.png') }}" type="image/x-icon">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Alternative pour les icônes Font Awesome -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+
 </head>
 <body>
      <!-- =========== Barre de Navigation =========== -->
@@ -110,8 +113,7 @@
                     <p class="mt-2 text-sm">Votre partenaire pour une transformation digitale réussie.</p>
                     <div class="mt-4 flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook fa-lg"></i></a>
                     </div>
                 </div>
                 <!-- Colonne 2: Services -->
@@ -138,7 +140,7 @@
                     <h3 class="text-sm font-semibold tracking-wider text-gray-200 uppercase">Contact</h3>
                     <ul class="mt-4 space-y-2">
                         <li><a href="mailto:votre.email@exemple.com" class="hover:text-white">votre.email@exemple.com</a></li>
-                        <li><a href="tel:+33000000000" class="hover:text-white">+33 0 00 00 00 00</a></li>
+                        <li><a href="tel:+33000000000" class="hover:text-white">+237 6 56 58 54 44 / 673 02 65 95</a></li>
                         <li><p>Douala, cameroun</p></li>
                     </ul>
                 </div>
@@ -150,7 +152,10 @@
     </footer>
 
 
-   <script src="{{asset('assets/js/app.js')}}"></script> 
+   <script src="{{asset('assets/js/app.js')}}"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="{{asset('assets/js/carr.js')}}"></script> 
+
 
 </body>
 </html>

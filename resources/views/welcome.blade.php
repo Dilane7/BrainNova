@@ -3,29 +3,25 @@
 @section('content')
     <main>
         <!-- =========== Section Héros =========== -->
-        <section id="accueil" class="bg-gray-50 pt-20  ">
-            <div class="container mx-auto">
-                <div class="flex-shrink-0 w-full">
-                    <img src="{{ asset('assets/img/hero1.jpg') }}" alt="image section hero" class="h-auto w-full object-cover">
-                </div>
-            </div>
-                <div class="absolute top-35 mx-auto  px-4 sm:px-6 lg:px-20 w-1/2">
-                    <h1 class="text-2xl md:text-6xl font-semibold text-white leading-tight">
-                    Passer à la vitesse digitale avec <span class="bg-clip-text  text-[#EC673D]">Brain Nova</span>
+        <section id="accueil" class=" h-auto pb-20 w-full px-6 sm:px-6 lg:px-20 mx-auto bg-cover mt-20 bg-center" style="background-image: url('assets/img/bg.png') ">
+            <div class="flex flex-col lg:flex-row gap-4 pt-10 w-full">
+                <div class="lg:w-1/2 w-full">
+                    <h1 class="text-4xl md:text-6xl font-semibold text-white leading-tight">
+                    Passer à la vitesse digitale avec <br><span class="bg-clip-text  text-[#EC673D]">Brain Nova🚀</span>
                     </h1>
-                    <p class="mt-4 max-w-3xl mx-auto font-light text-sm md:text-lg text-white">
+                    <p class="mt-4 max-w-3xl mx-auto font-light text-md md:text-lg text-white">
                         Des solutions créatives en <span class="font-medium"><strong>Développement Web</strong></span>,<span class="font-medium">  <strong>UI/UX Design</strong></span>, <span class="font-medium"><strong>Design Graphique</strong></span> et <span class="font-medium"><strong>Marketing Digital</strong></span> pour transformer votre présence en ligne et atteindre vos objectifs.
                     </p>
-                    <div class="mt-8 flex justify-between ">
-                        <a href="#services" class="bg-[#FDC416] flex gap-2 items-center text-white px-3 py-3 rounded-full font-semibold text-md hover:bg-white hover:border hover:border-[#FDC416] hover:text-[#FDC416] transition duration-300">
+                    <div class="mt-8 flex justify-around ">
+                        <a href="#services" class="bg-[#FDC416] group flex gap-2 items-center shadow-sm/80 shadow-white text-white px-3 py-3 rounded-full font-semibold text-md hover:border hover:text-[#FDC416] hover:border-[#FDC416] hover:bg-transparent ">
                             <span>Découvrir nos services</span>
-                            <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-white text-[#FDC416]">
+                            <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-white text-[#FDC416] group-hover:text-white group-hover:bg-[#FDC416]">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg>
                             </div>
                         </a>
-                        <a href="#realisations" class=" text-[#316FB5] flex gap-2 items-center bg-white px-3 py-3 rounded-full font-semibold text-md hover:bg-white hover:text-[#FDC416] hover:border hover:border-[#FDC416] transition duration-300">
+                        <a href="#realisations" class=" text-[#316FB5] shadow-md border-2 border-[#316FB5] flex gap-2 items-center  px-3 py-3 rounded-full font-semibold text-md  hover:text-[#316FB5] hover:bg-white  transition duration-300">
                             <span>Demander un devis</span>
                             <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-[#316FB5] text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -33,38 +29,41 @@
                                 </svg>
                             </div>
                         </a>
-                        
-                    </div>
+
+                    </div>  
                 </div>
-                <div class="flex items-center gap-2 absolute top-80 left-180 text-white  bg-black animate-bounce duration-700 rounded-full py-2 px-2  font-semibold text-md ">
-                    <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-[#316FB5] text-white">
+                <div class="lg:w-1/2 h-auto w-full relative">
+                    <img src="{{asset('assets/img/ms bg.png')}}" alt="" >
+                    <div class="flex items-center top-8 gap-2 right-12 absolute  text-[#316FB5] bg-white  animate-bounce duration-700 rounded-full py-2 px-2  font-semibold text-md ">
+                        <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-[#316FB5] text-white">
                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                        </div>
+                        Developpement Web
                     </div>
-                    Developpement Web
-                </div>
-                <div class="flex items-center gap-2 absolute top-35 left-250 text-[#316FB5]  bg-white animate-bounce rounded-full py-2 px-2  font-semibold text-md ">
-                    <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-[#316FB5] text-white">
+                    <div class="flex items-center top-50 right-1/2 gap-2 absolute  text-white  bg-[#316FB5] animate-bounce rounded-full py-2 px-2  font-semibold text-md ">
+                        <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-white text-[#316FB5]">
                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                        </div>
+                        Marketing Digital
                     </div>
-                    Marketing Digital
-                </div>
-                <div class="flex items-center gap-2 absolute top-150 left-250 text-white  bg-black animate-bounce rounded-full py-2 px-2  font-semibold text-md ">
-                    <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-[#316FB5] text-white">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                    <div class="flex items-center gap-2 absolute top-115 right-40 text-white  bg-[#316FB5] animate-bounce rounded-full py-2 px-2  font-semibold text-md ">
+                        <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-white text-[#316FB5]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                        </div>
+                        Design Graphique
                     </div>
-                    Design Graphique
-                </div>
-                <div class="flex items-center gap-2 absolute top-90 left-270 text-[#316FB5]  bg-white animate-bounce rounded-full py-2 px-2  font-semibold text-md ">
-                    <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-[#316FB5] text-white">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                    <div class="text-md flex items-center gap-2 absolute  top-78 right-8 text-[#316FB5]  bg-white animate-bounce rounded-full py-2 px-2  font-semibold  ">
+                        <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-[#316FB5] text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                        </div>
+                        UI/UX Design
                     </div>
-                    UI/UX Design
                 </div>
-            
+            </div>
         </section>
 
         <!-- =========== Section Services =========== -->
-        <section id="services" class="py-10 bg-gradient-to-b from-[#000C1B] to-[#0B4783] ">
+        <section id="services" class="pb-10 pt-20 bg-gradient-to-b from-[#000C1B] to-[#0B4783] ">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Nos Services</h2>
@@ -158,40 +157,187 @@
             </div>
         </section>
 
-        
-
-        <!-- =========== Section Témoignages =========== -->
-        <section class="py-20 bg-white">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <svg class="w-12 h-12 mx-auto text-gray-300" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                    <path d="M9.33 8.37C5.47 11.16 3.5 15.62 3.5 19.5c0 1.93.39 3.75 1.1 5.42.07.16.22.28.38.28.08 0 .16-.03.22-.09.2-.18.23-.48.06-.72C4.58 22.97 4.2 21.3 4.2 19.5c0-3.32 1.62-7.05 4.88-9.5.21-.16.27-.45.12-.66-.15-.21-.45-.27-.66-.12zM21.33 8.37c-3.86 2.79-5.83 7.25-5.83 11.13 0 1.93.39 3.75 1.1 5.42.07.16.22.28.38.28.08 0 .16-.03.22-.09.2-.18.23-.48.06-.72-0.68-1.42-1.06-3.09-1.06-4.89 0-3.32 1.62-7.05 4.88-9.5.21-.16.27-.45.12-.66-.15-.21-.45-.27-.66-.12z" />
-                </svg>
-                <blockquote class="mt-4">
-                    <p class="text-xl md:text-2xl font-medium text-gray-900">
-                        "Une équipe incroyablement professionnelle et créative. Ils ont su comprendre nos besoins et livrer un site web qui dépasse nos attentes. Le suivi marketing a déjà des résultats impressionnants !"
+        <!-- ======================= Section Nos Réalisations avec Carrousel ======================= -->
+        <section id="realisations" class="bg-gradient-to-b from-[#0c355e] to-[#0B4783] py-10 lg:pb-20 lg:pt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+                
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Nos Réalisations</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-white">
+                        Découvrez quelques-uns des projets qui illustrent notre passion et notre expertise.
                     </p>
-                </blockquote>
-                <footer class="mt-6">
-                    <div class="font-semibold text-gray-900">[Nom du client]</div>
-                    <div class="text-gray-600">CEO de [Nom de l'entreprise]</div>
-                </footer>
+                </div>
+
+                <!-- Structure du Carrousel Swiper -->
+                <div class="swiper realisations-carousel relative">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide p-2">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+                                <div>
+                                    <img src="{{asset('assets/img/tn const.jpg')}}" alt="Image du projet La Belle Plante" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                                </div>
+                                <div class="flex flex-col justify-center text-center md:text-left md:order-first">
+                                    <h3 class="text-2xl lg:text-3xl font-bold text-white">Développement web : site internet de l'entreprise TN Construction</h3>
+                                    <p class="mt-4 text-white text-base lg:text-lg">
+                                        Nous avons entièrement repensé l'expérience utilisateur et l'interface du site e-commerce pour augmenter les conversions. La nouvelle plateforme, développée sur mesure, est plus rapide, plus intuitive et optimisée pour le SEO.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide p-2">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+                                <div>
+                                    <img src="{{asset('assets/img/mobile de supermar.jpg')}}" alt="Image du projet Innovatech" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                                </div>
+                                <div class="flex flex-col justify-center text-center md:text-left md:order-first">
+                                    <h3 class="text-2xl lg:text-3xl font-bold text-white">Ui/ux design : design d'une application mobile de supermarché alimentaire</h3>
+                                    <p class="mt-4 text-white text-base lg:text-lg">
+                                        Food Product est une application mobile innovante de commerce alimentaire, conçue 
+                                        pour offrir une expérience d'achat fluide et personnalisée. Cette plateforme permet 
+                                        aux utilisateurs de découvrir et commander une large gamme de produits alimentaires frais et de qualité, avec la possibilité
+                                         de personnaliser leurs préférences et de suivre leurs commandes en temps réel.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide p-2">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+                                
+                                <div>
+                                <img src="{{asset('assets/img/Visuels publicitaires.jpg')}}" alt="Image du projet Gourmet Local" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                                </div>
+
+                                <div class="flex flex-col justify-center text-center md:text-left md:order-first">
+                                    <h3 class="text-2xl lg:text-3xl font-bold text-white">Campagne Marketing "Gourmet Local"</h3>
+                                    <p class="mt-4 text-white text-base lg:text-lg">
+                                        Collection de flyers créatifs conçus pour divers événements et entreprises. Chaque flyer est pensé pour captiver l'attention et transmettre efficacement le message clé, avec un design moderne et impactant.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <!-- Slide 4-->
+                        <div class="swiper-slide p-2">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+                                
+                                <div>
+                                <img src="{{asset('assets/img/carte visite.jpg')}}" alt="Image du projet Gourmet Local" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                                </div>
+
+                                <div class="flex flex-col justify-center text-center md:text-left md:order-first">
+                                    <h3 class="text-2xl lg:text-3xl font-bold text-white">Logo + carte de visite TN CONSTRUCTION"</h3>
+                                    <p class="mt-4 text-white text-base lg:text-lg">
+                                        designs graphiques comprenant des cartes de visite professionnelles et des supports marketing variés. Chaque création est méticuleusement conçue pour refléter l'identité unique de chaque client tout en assurant une communication visuelle efficace et mémorable.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination (les points en bas) -->
+                    <div class="swiper-pagination mt-5 relative"></div>
+                </div>
             </div>
         </section>
 
+        <!-- ======================= Section Témoignages (1 par Slide) ======================= -->
+        <section id="temoignages" class="bg-white py-10 sm:py-10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <!-- =========== Appel à l'Action Final (CTA) =========== -->
-        <section id="contact" class="bg-indigo-700">
-            <div class="max-w-4xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                    <span class="block">Prêt à donner vie à votre projet ?</span>
-                </h2>
-                <p class="mt-4 text-lg leading-6 text-indigo-200">
-                    Discutons ensemble de vos ambitions. Le premier échange est sans engagement.
-                </p>
-                <a href="mailto:votre.email@exemple.com" class="mt-8 w-full inline-flex items-center justify-center px-8 py-4 border border-transparent rounded-full shadow-sm text-base font-medium text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto">
-                    Obtenir mon devis gratuit
-                </a>
+                <div class="text-center mb-15">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Ce que disent nos clients</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                        La confiance est au cœur de chaque projet. Voici ce que certains de nos partenaires pensent de notre collaboration.
+                    </p>
+                </div>
+
+                <!-- Structure du Carrousel de Témoignages -->
+                <div class="swiper testimonials-carousel-single overflow-hidden">
+                    <div class="swiper-wrapper">
+
+                        <!-- Témoignage 1 -->
+                        <div class="swiper-slide">
+                            <!-- Conteneur pour centrer la carte -->
+                            <div class="mx-auto max-w-3xl">
+                                <figure class="flex flex-col bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12 text-center">
+                                    <img class="h-25 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/Logo entreprise VFT.png')}}" alt="Logo de l'entreprise cliente 1">
+                                    
+                                    <blockquote class="flex-grow">
+                                        <p class="text-xl md:text-2xl leading-relaxed text-gray-800 italic">
+                                            "Brainnova a grandement contribué à notre visibilité à travers des visuels publicitaires percutants et des campagnes Facebook efficaces. Leur professionnalisme, le respect des délais et la qualité du travail sont irréprochables. Nous recommandons vivement leurs services."
+                                        </p>
+                                    </blockquote>
+
+                                    <figcaption class="mt-10">
+                                        <div class="font-semibold text-lg text-gray-900">Mr Roger Ongono</div>
+                                        <div class="text-base text-gray-500">Promoteur, Entreprise VFT – Douala</div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <!-- Témoignage 2 -->
+                        <div class="swiper-slide">
+                            <!-- Conteneur pour centrer la carte -->
+                            <div class="mx-auto max-w-3xl">
+                                <figure class="flex flex-col bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12 text-center">
+                                    <img class="h-20 w-auto mx-auto object-contain mb-8" src="{{asset('assets/img/logo TIKEU GROUP.jpg')}}" alt="Logo de l'entreprise cliente 2">
+                                    
+                                    <blockquote class="flex-grow">
+                                        <p class="text-xl md:text-2xl leading-relaxed text-gray-800 italic">
+                                            " Nous faisons régulièrement appel à Brainnova pour la création de visuels, flyers et cartes personnalisées pour nos événements. La qualité d’impression, la créativité graphique et le respect des délais sont toujours au rendez-vous. Un partenaire de confiance qui valorise chacun de nos projets"
+                                        </p>
+                                    </blockquote>
+                                    
+                                    <figcaption class="mt-10">
+                                        <div class="font-semibold text-lg text-gray-900">M. TIKEU Gildas Peguy</div>
+                                        <div class="text-base text-gray-500">Promoteur, TIKEU GROUP – Douala</div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <!-- Témoignage 3 -->
+                        <div class="swiper-slide">
+                            <!-- Conteneur pour centrer la carte -->
+                            <div class="mx-auto max-w-3xl">
+                                <figure class="flex flex-col bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12 text-center">
+                                    <img class="h-20 w-auto mx-auto object-contain mb-8" src="{{asset('assets/img/logo entreprise tnconstruction.png')}}" alt="Logo de l'entreprise cliente 3">
+                                    
+                                    <blockquote class="flex-grow">
+                                        <p class="text-xl md:text-2xl leading-relaxed text-gray-800 italic">
+                                            "Grâce à Brainnova, notre entreprise bénéficie désormais d’un site internet moderne, fluide et professionnel. Leur accompagnement en communication visuelle et la gestion efficace de nos pages Facebook ont considérablement renforcé notre image de marque. Une équipe sérieuse, créative et orientée résultats."
+                                        </p>
+                                    </blockquote>
+                                    
+                                    <figcaption class="mt-10">
+                                        <div class="font-semibold text-lg text-gray-900">M. NKAMENI TIENTCHEU</div>
+                                        <div class="text-base text-gray-500">Promoteur, TN Construction – Douala</div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="swiper-button-prev-single -left-2 md:-left-4 w-12 h-12 text-gray-500 hover:text-gray-900 transition"></div>
+                    <div class="swiper-button-next-single -right-2 md:-right-4 w-12 h-12 text-gray-500 hover:text-gray-900 transition"></div>
+                    
+            
+                </div>
+                <div class="swiper-pagination-single mt-4 text-center"></div>
             </div>
         </section>
+
+        
     </main>
 @endsection
