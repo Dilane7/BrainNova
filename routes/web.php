@@ -14,7 +14,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/services', function () {
-    return view('welcome');
+    return view('services');
 })->name('services');
 
 Route::get('/realisations', function () {

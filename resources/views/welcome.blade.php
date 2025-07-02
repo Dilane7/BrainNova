@@ -254,7 +254,7 @@
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
                 <div class="text-center mb-15">
-                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Ce que disent nos clients</h2>
+                    <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Ce que disent nos clients</h2>
                     <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
                         La confiance est au cœur de chaque projet. Voici ce que certains de nos partenaires pensent de notre collaboration.
                     </p>
@@ -272,7 +272,7 @@
                                     <img class="h-25 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/Logo entreprise VFT.png')}}" alt="Logo de l'entreprise cliente 1">
                                     
                                     <blockquote class="flex-grow">
-                                        <p class="text-xl md:text-2xl leading-relaxed text-gray-800 italic">
+                                        <p class="text-xl  leading-relaxed text-gray-800 italic">
                                             "Brainnova a grandement contribué à notre visibilité à travers des visuels publicitaires percutants et des campagnes Facebook efficaces. Leur professionnalisme, le respect des délais et la qualité du travail sont irréprochables. Nous recommandons vivement leurs services."
                                         </p>
                                     </blockquote>
@@ -293,7 +293,7 @@
                                     <img class="h-20 w-auto mx-auto object-contain mb-8" src="{{asset('assets/img/logo TIKEU GROUP.jpg')}}" alt="Logo de l'entreprise cliente 2">
                                     
                                     <blockquote class="flex-grow">
-                                        <p class="text-xl md:text-2xl leading-relaxed text-gray-800 italic">
+                                        <p class="text-xl  leading-relaxed text-gray-800 italic">
                                             " Nous faisons régulièrement appel à Brainnova pour la création de visuels, flyers et cartes personnalisées pour nos événements. La qualité d’impression, la créativité graphique et le respect des délais sont toujours au rendez-vous. Un partenaire de confiance qui valorise chacun de nos projets"
                                         </p>
                                     </blockquote>
@@ -314,7 +314,7 @@
                                     <img class="h-20 w-auto mx-auto object-contain mb-8" src="{{asset('assets/img/logo entreprise tnconstruction.png')}}" alt="Logo de l'entreprise cliente 3">
                                     
                                     <blockquote class="flex-grow">
-                                        <p class="text-xl md:text-2xl leading-relaxed text-gray-800 italic">
+                                        <p class="text-xl leading-relaxed text-gray-800 italic">
                                             "Grâce à Brainnova, notre entreprise bénéficie désormais d’un site internet moderne, fluide et professionnel. Leur accompagnement en communication visuelle et la gestion efficace de nos pages Facebook ont considérablement renforcé notre image de marque. Une équipe sérieuse, créative et orientée résultats."
                                         </p>
                                     </blockquote>
@@ -341,3 +341,8 @@
         
     </main>
 @endsection
+
+
+
+
+
