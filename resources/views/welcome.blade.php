@@ -249,37 +249,50 @@
             </div>
         </section>
 
-        <!-- ======================= Section Témoignages (1 par Slide) ======================= -->
-        <section id="temoignages" class="bg-white py-10 sm:py-10">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        
 
-                <div class="text-center mb-15">
+        <!-- ======================= Section Témoignages ======================= -->
+<section class="relative isolate bg-gray-900  py-10 sm:py-10">
+
+    <!-- Image de fond et overlay -->
+    <div class="absolute inset-0 -z-10">
+        <img class="h-full w-full object-cover" 
+             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" 
+             alt="Environnement de travail professionnel en arrière-plan">
+        
+        <!-- Overlay pour assombrir et assurer la lisibilité -->
+        <div class="absolute inset-0 bg-black/35"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center pt-15 mb-15">
                     <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Ce que disent nos clients</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-white">
                         La confiance est au cœur de chaque projet. Voici ce que certains de nos partenaires pensent de notre collaboration.
                     </p>
                 </div>
 
                 <!-- Structure du Carrousel de Témoignages -->
-                <div class="swiper testimonials-carousel-single overflow-hidden">
+                <div class="swiper testimonials-carousel-single  overflow-hidden">
                     <div class="swiper-wrapper">
 
                         <!-- Témoignage 1 -->
                         <div class="swiper-slide">
                             <!-- Conteneur pour centrer la carte -->
                             <div class="mx-auto max-w-3xl">
-                                <figure class="flex flex-col bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12 text-center">
+                                <figure class="flex flex-col shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl  p-8 md:p-8 text-center">
                                     <img class="h-25 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/Logo entreprise VFT.png')}}" alt="Logo de l'entreprise cliente 1">
                                     
                                     <blockquote class="flex-grow">
-                                        <p class="text-xl  leading-relaxed text-gray-800 italic">
+                                        <p class="text-lg  leading-relaxed text-white italic">
                                             "Brainnova a grandement contribué à notre visibilité à travers des visuels publicitaires percutants et des campagnes Facebook efficaces. Leur professionnalisme, le respect des délais et la qualité du travail sont irréprochables. Nous recommandons vivement leurs services."
                                         </p>
                                     </blockquote>
 
-                                    <figcaption class="mt-10">
-                                        <div class="font-semibold text-lg text-gray-900">Mr Roger Ongono</div>
-                                        <div class="text-base text-gray-500">Promoteur, Entreprise VFT – Douala</div>
+                                    <figcaption class="mt-5">
+                                        <div class="font-semibold text-lg text-[#EC673D]">Mr Roger Ongono</div>
+                                        <div class="text-base text-white/70">Promoteur, Entreprise VFT – Douala</div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -289,18 +302,18 @@
                         <div class="swiper-slide">
                             <!-- Conteneur pour centrer la carte -->
                             <div class="mx-auto max-w-3xl">
-                                <figure class="flex flex-col bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12 text-center">
-                                    <img class="h-20 w-auto mx-auto object-contain mb-8" src="{{asset('assets/img/logo TIKEU GROUP.jpg')}}" alt="Logo de l'entreprise cliente 2">
+                                <figure class="flex flex-col shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl  p-8 md:p-12 text-center">
+                                    <img class="h-20 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/logo TIKEU GROUP.jpg')}}" alt="Logo de l'entreprise cliente 2">
                                     
                                     <blockquote class="flex-grow">
-                                        <p class="text-xl  leading-relaxed text-gray-800 italic">
+                                        <p class="text-lg  leading-relaxed text-white italic">
                                             " Nous faisons régulièrement appel à Brainnova pour la création de visuels, flyers et cartes personnalisées pour nos événements. La qualité d’impression, la créativité graphique et le respect des délais sont toujours au rendez-vous. Un partenaire de confiance qui valorise chacun de nos projets"
                                         </p>
                                     </blockquote>
                                     
-                                    <figcaption class="mt-10">
-                                        <div class="font-semibold text-lg text-gray-900">M. TIKEU Gildas Peguy</div>
-                                        <div class="text-base text-gray-500">Promoteur, TIKEU GROUP – Douala</div>
+                                    <figcaption class="mt-5">
+                                        <div class="font-semibold text-lg text-[#EC673D]">M. TIKEU Gildas Peguy</div>
+                                        <div class="text-base text-white/70">Promoteur, TIKEU GROUP – Douala</div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -310,18 +323,18 @@
                         <div class="swiper-slide">
                             <!-- Conteneur pour centrer la carte -->
                             <div class="mx-auto max-w-3xl">
-                                <figure class="flex flex-col bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12 text-center">
-                                    <img class="h-20 w-auto mx-auto object-contain mb-8" src="{{asset('assets/img/logo entreprise tnconstruction.png')}}" alt="Logo de l'entreprise cliente 3">
+                                <figure class="flex flex-col shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl  p-8 md:p-12 text-center">
+                                    <img class="h-20 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/logo entreprise tnconstruction.png')}}" alt="Logo de l'entreprise cliente 3">
                                     
                                     <blockquote class="flex-grow">
-                                        <p class="text-xl leading-relaxed text-gray-800 italic">
+                                        <p class="text-lg leading-relaxed text-white italic">
                                             "Grâce à Brainnova, notre entreprise bénéficie désormais d’un site internet moderne, fluide et professionnel. Leur accompagnement en communication visuelle et la gestion efficace de nos pages Facebook ont considérablement renforcé notre image de marque. Une équipe sérieuse, créative et orientée résultats."
                                         </p>
                                     </blockquote>
                                     
-                                    <figcaption class="mt-10">
-                                        <div class="font-semibold text-lg text-gray-900">M. NKAMENI TIENTCHEU</div>
-                                        <div class="text-base text-gray-500">Promoteur, TN Construction – Douala</div>
+                                    <figcaption class="mt-5">
+                                        <div class="font-semibold text-lg text-[#EC673D]">M. NKAMENI TIENTCHEU</div>
+                                        <div class="text-base text-white/70">Promoteur, TN Construction – Douala</div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -329,14 +342,14 @@
 
                     </div>
                     
-                    <div class="swiper-button-prev-single -left-2 md:-left-4 w-12 h-12 text-gray-500 hover:text-gray-900 transition"></div>
-                    <div class="swiper-button-next-single -right-2 md:-right-4 w-12 h-12 text-gray-500 hover:text-gray-900 transition"></div>
+                    <div class="swiper-button-prev-single -left-2 md:-left-6 w-12 h-12 text-white/80 hover:text-gray-900 transition"></div>
+                    <div class="swiper-button-next-single -right-2 md:-right-6 w-12 h-12 text-white/80 hover:text-white transition"></div>
                     
             
                 </div>
-                <div class="swiper-pagination-single mt-4 text-center"></div>
+                <div class="swiper-pagination-single text-center"></div>
             </div>
-        </section>
+</section>
 
         
     </main>

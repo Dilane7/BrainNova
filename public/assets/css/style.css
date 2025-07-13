@@ -13,11 +13,11 @@
     /* Ajuster la taille des icônes de flèche par défaut de Swiper */
     .swiper-button-next::after, .swiper-button-prev::after {
         font-size: 1.25rem; /* 20px */
+        
     }
 
     .testimonials-carousel-single .swiper-pagination {
         position: static;
-        margin-top: 2rem;
     }
     .testimonials-carousel-single .swiper-pagination-bullet {
         background-color: #9ca3af;
@@ -32,10 +32,11 @@
     /* Remplacement des flèches par défaut de Swiper par des SVGs plus élégants */
     .swiper-button-prev-single, .swiper-button-next-single {
         position: absolute;
-        top: 50%;
+        top: 35%;
         transform: translateY(-50%);
-        z-index: 10;
+        z-index: 100;
         cursor: pointer;
+        color: white;
     }
     .swiper-button-prev-single::after, .swiper-button-next-single::after {
         content: '';

@@ -48,12 +48,12 @@
 
                         <!-- Lien Réalisations -->
                         <div class="relative group">
-                            <a class="transition-colors duration-300 font-semibold py-2 {{ request()->routeIs('realisations') ? 'text-[#EC673D] font-semibold' : 'text-[#4A7DC7] hover:text-[#EC673D]' }}" 
-                            href="{{ route('realisations') }}">
+                            <a class="transition-colors duration-300 font-semibold py-2 {{ request()->routeIs('apropos') ? 'text-[#EC673D] font-semibold' : 'text-[#4A7DC7] hover:text-[#EC673D]' }}" 
+                            href="{{ route('apropos') }}">
                                 A Propos
                             </a>
                             <span class="absolute -bottom-2 left-0 h-[3px] w-full bg-[#EC673D] transform transition-transform duration-300 ease-out 
-                                        {{ request()->routeIs('realisations') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}">
+                                        {{ request()->routeIs('apropos') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}">
                             </span>
                         </div>
 
