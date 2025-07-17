@@ -13,7 +13,7 @@
                         Des solutions créatives en <span class="font-medium"><strong>Développement Web</strong></span>,<span class="font-medium">  <strong>UI/UX Design</strong></span>, <span class="font-medium"><strong>Design Graphique</strong></span> et <span class="font-medium"><strong>Marketing Digital</strong></span> pour transformer votre présence en ligne et atteindre vos objectifs.
                     </p>
                     <div class="mt-8 flex justify-around ">
-                        <a href="#services" class="bg-[#FDC416] group flex gap-2 items-center shadow-sm/80 shadow-white text-white px-3 py-3 rounded-full font-semibold text-md hover:border hover:text-[#FDC416] hover:border-[#FDC416] hover:bg-transparent ">
+                        <a href="{{ route('services') }}" class="bg-[#FDC416] group flex gap-2 items-center shadow-sm/80 shadow-white text-white px-3 py-3 rounded-full font-semibold text-md hover:border hover:text-[#FDC416] hover:border-[#FDC416] hover:bg-transparent ">
                             <span>Découvrir nos services</span>
                             <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-white text-[#FDC416] group-hover:text-white group-hover:bg-[#FDC416]">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -21,11 +21,11 @@
                                 </svg>
                             </div>
                         </a>
-                        <a href="#realisations" class=" text-[#316FB5] shadow-md border-2 border-[#316FB5] flex gap-2 items-center  px-3 py-3 rounded-full font-semibold text-md  hover:text-[#316FB5] hover:bg-white  transition duration-300">
-                            <span>Demander un devis</span>
+                        <a href="{{ asset('assets/pdf/Plaquette commerciale numerique Brain Nova.pdf') }}" download="Profil_Brain_Nova.pdf" class=" text-[#316FB5] shadow-md border-2 border-[#316FB5] flex gap-2 items-center  px-3 py-3 rounded-full font-semibold text-md  hover:text-[#316FB5] hover:bg-white  transition duration-300">
+                            <span>Télécharger le profil</span>
                             <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-[#316FB5] text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                                 </svg>
                             </div>
                         </a>
@@ -74,9 +74,8 @@
                 <div class="absolute inset-0 bg-black/25"></div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-                <div class="mt-8 py-15   border-t border-gray-700 text-center text-base">
-                </div>
+            <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-20">
+        
                 <div class="text-center mb-16">
                     <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Nos Services</h2>
                     <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-200">
@@ -94,7 +93,7 @@
                         </div>
                         <h3 class="mt-5 text-xl font-semibold text-white">Développement Web sur Mesure</h3>
                         <p class="mt-2 text-base text-gray-300 flex-grow">Sites performants, sécurisés et optimisés pour l'expérience utilisateur. Du site vitrine à l'e-commerce.</p>
-                        <a href="#" class="mt-6 self-start">
+                        <a href="{{ route('services') }}" class="mt-6 self-start">
                             <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-yellow-300 transition-colors">
                                 <span>Voir plus</span>
                                 <img src="{{asset('assets/img/right-up.png')}}" class="h-4" alt="Icône flèche">
@@ -109,7 +108,7 @@
                         </div>
                         <h3 class="mt-5 text-xl font-semibold text-white">Design Graphique & Identité Visuelle</h3>
                         <p class="mt-2 text-base text-gray-300 flex-grow">Des identités visuelles percutantes et des supports qui captivent votre audience et racontent votre histoire.</p>
-                        <a href="#" class="mt-6 self-start">
+                        <a href="{{ route('services') }}" class="mt-6 self-start">
                             <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-yellow-300 transition-colors">
                                 <span>Voir plus</span>
                                 <img src="{{asset('assets/img/right-up.png')}}" class="h-4" alt="Icône flèche">
@@ -124,7 +123,7 @@
                         </div>
                         <h3 class="mt-5 text-xl font-semibold text-white">Stratégie Marketing Digital</h3>
                         <p class="mt-2 text-base text-gray-300 flex-grow">Augmentez votre trafic, générez des leads qualifiés et fidélisez votre clientèle grâce au SEO et aux publicités en ligne.</p>
-                        <a href="#" class="mt-6 self-start">
+                        <a href="{{ route('services') }}" class="mt-6 self-start">
                             <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-yellow-300 transition-colors">
                                 <span>Voir plus</span>
                                 <img src="{{asset('assets/img/right-up.png')}}" class="h-4" alt="Icône flèche">
@@ -139,7 +138,7 @@
                         </div>
                         <h3 class="mt-5 text-xl font-semibold text-white">Hébergement & services web</h3>
                         <p class="mt-2 text-base text-gray-300 flex-grow">Assurez à votre site une présence en ligne fiable, rapide et sécurisée. Nous nous occupons de toute la complexité technique.</p>
-                        <a href="#" class="mt-6 self-start">
+                        <a href="{{ route('services') }}" class="mt-6 self-start">
                             <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-yellow-300 transition-colors">
                                 <span>Voir plus</span>
                                 <img src="{{asset('assets/img/right-up.png')}}" class="h-4" alt="Icône flèche">
@@ -154,7 +153,7 @@
                         </div>
                         <h3 class="mt-5 text-xl font-semibold text-white">Impression & objets publicitaires</h3>
                         <p class="mt-2 text-base text-gray-300 flex-grow">Transformez votre marque en une expérience tangible avec des supports qui marquent les esprits et laissent une impression durable.</p>
-                        <a href="#" class="mt-6 self-start">
+                        <a href="{{ route('services') }}" class="mt-6 self-start">
                             <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-yellow-300 transition-colors">
                                 <span>Voir plus</span>
                                 <img src="{{asset('assets/img/right-up.png')}}" class="h-4" alt="Icône flèche">
@@ -167,7 +166,7 @@
 
         <!-- ======================= Section Nos Réalisations avec Carrousel ======================= -->
         <section id="realisations" class="bg-gray-900 py-10 lg:pb-20 lg:pt-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+            <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-20">
                 
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Nos Réalisations</h2>
@@ -270,7 +269,7 @@
                 <div class="absolute inset-0 bg-black/35"></div>
             </div>
 
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
 
                         <div class="text-center pt-15 mb-15">
                             <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Ce que disent nos clients</h2>

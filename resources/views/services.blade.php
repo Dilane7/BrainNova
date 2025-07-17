@@ -21,7 +21,7 @@
         </div>
         </section>
 
-        <section class="relative isolate py-20 sm:py-24">
+        <section id="details-services" class=" relative isolate py-20 sm:py-24">
             
             <!-- Image de fond et overlay -->
             <div class="absolute inset-0 -z-10">
@@ -33,7 +33,7 @@
                 <div class="absolute inset-0 bg-black/65"></div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+            <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-20">
                 
                 <!-- Titre de la section -->
                 <div class="text-center mb-16">
@@ -133,7 +133,7 @@
             </div>
         </section>
 
-        <section class="relative isolate py-20 sm:py-24">
+        <section  class=" relative isolate py-20 sm:py-24">
             
             <!-- Image de fond et overlay -->
             <div class="absolute inset-0 -z-10">
@@ -145,7 +145,7 @@
                 <div class="absolute inset-0 bg-black/70"></div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+            <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-20">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Notre Approche Collaborative</h2>
                     <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-300">Un processus clair et transparent pour garantir le succès de votre projet à chaque étape.</p>

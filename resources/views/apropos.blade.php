@@ -9,7 +9,7 @@
             
             <div class="mx-auto max-w-2xl py-30 sm:py-48 lg:py-40 text-center">
                 <h1 class="text-4xl font-bold tracking-tight text-[#EC673D] sm:text-6xl">Votre avenir digital commence ici !</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-300">Nous sommes Brain Nova. Une équipe de passionnés dédiée à transformer vos idées en succès numériques concrets et mesurables.</p>
+                <p class="mt-6 text-lg leading-8  px-6 text-gray-300">Nous sommes Brain Nova. Une équipe de passionnés dédiée à transformer vos idées en succès numériques concrets et mesurables.</p>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
                     <div class="text-base text-white">
                         <h1 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Brain Nova : Votre partenaire pour l'innovation digitale.</h1>
                         <p class="mt-6">
-                            Brain Nova est une start-up spécialisée dans la prestation de services technologiques innovants. Nous accompagnons les entreprises et les particuliers dans leur transformation digitale à travers des solutions sur mesure en développement web et mobile, UI/UX design, design graphique, hébergement web et marketing digital.
+                            Brain Nova est une entreprise spécialisée dans la prestation de services technologiques innovants. Nous accompagnons les entreprises et les particuliers dans leur transformation digitale à travers des solutions sur mesure en développement web et mobile, UI/UX design, design graphique, hébergement web et marketing digital.
                         </p>
                         <p class="mt-4">
                             Notre vision est de rendre la technologie plus accessible, utile et impactante, en plaçant l’expérience utilisateur et la qualité au cœur de notre démarche. Grâce à une équipe passionnée et polyvalente, nous proposons des services modernes, créatifs et adaptés aux besoins de chaque client.

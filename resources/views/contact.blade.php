@@ -10,7 +10,7 @@
             
             <div class="mx-auto max-w-2xl py-30 sm:py-48 lg:py-40 text-center">
                 <h1 class="text-4xl font-bold tracking-tight text-[#EC673D] sm:text-6xl">Parlons de votre projet</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-300">Une idée, une question, ou un projet à nous soumettre ? Nous sommes à votre écoute. Remplissez le formulaire ou contactez-nous directement. Nous nous engageons à vous répondre dans les plus brefs délais.</p>
+                <p class="mt-6 text-lg px-6 leading-8 text-gray-300">Une idée, une question, ou un projet à nous soumettre ? Nous sommes à votre écoute. Remplissez le formulaire ou contactez-nous directement. Nous nous engageons à vous répondre dans les plus brefs délais.</p>
             </div>
         </div>
     </div>
