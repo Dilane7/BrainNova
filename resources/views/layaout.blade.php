@@ -71,11 +71,11 @@
                 </div>
                 <!-- Bouton CTA (Desktop) -->
                 <div class="hidden md:block">
-                     <a href="#contact" class="bg-[#316FB5] text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-white hover:text-[#316FB5] hover:border hover:border-[#316FB5] transition duration-300">Demander un devis</a>
+                     <a href="{{ route('contact') }}" class="bg-[#316FB5] text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-white hover:text-[#316FB5] hover:border hover:border-[#316FB5] transition duration-300">Demander un devis</a>
                 </div>
                 <!-- Menu Burger (Mobile) -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-[#316FB5] focus:outline-none">
                         <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
@@ -87,11 +87,11 @@
         <!-- 2. Menu mobile, initialement caché -->
         <div id="mobile-menu" class="hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#accueil" class="block text-gray-600 hover:bg-gray-100 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Accueil</a>
-                <a href="#services" class="block text-gray-600 hover:bg-gray-100 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="#realisations" class="block text-gray-600 hover:bg-gray-100 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Réalisations</a>
-                <a href="#contact" class="block text-gray-600 hover:bg-gray-100 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Contact</a>
-                <a href="#contact" class="block bg-indigo-600 text-white mt-2 mx-2 px-3 py-2 rounded-md text-base font-medium text-center">Demander un devis</a>
+                <a href="{{ route('home') }}" class="block text-[#316FB5] hover:bg-gray-100 hover:text-[#316FB5] px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                <a href="{{ route('services') }}" class="block text-[#316FB5] hover:bg-gray-100 hover:text-[#316FB5] px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="{{ route('apropos') }}" class="block text-[#316FB5] hover:bg-gray-100 hover:text-[#316FB5] px-3 py-2 rounded-md text-base font-medium">Réalisations</a>
+                <a href="{{ route('contact') }}" class="block text-[#316FB5] hover:bg-gray-100 hover:text-[#316FB5] px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="{{ route('contact') }}" class="block bg-[#316FB5] text-white mt-2 mx-2 px-3 py-2 rounded-md text-base font-medium text-center">Demander un devis</a>
             </div>
         </div>
     </nav>
@@ -140,7 +140,7 @@
                     <h3 class="text-sm font-semibold tracking-wider text-gray-200 uppercase">Contact</h3>
                     <ul class="mt-4 space-y-2">
                         <li><a href="mailto:votre.email@exemple.com" class="hover:text-white">votre.email@exemple.com</a></li>
-                        <li><a href="tel:+33000000000" class="hover:text-white">+237 6 56 58 54 44 / 673 02 65 95</a></li>
+                        <li><a href="tel:+237673026595" class="hover:text-white">+237 6 56 58 54 44 / 673 02 65 95</a></li>
                         <li><p>Douala, cameroun</p></li>
                     </ul>
                 </div>

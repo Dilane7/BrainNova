@@ -133,9 +133,6 @@
             </div>
         </section>
 
-
-      
-
         <section class="relative isolate py-20 sm:py-24">
             
             <!-- Image de fond et overlay -->
@@ -153,9 +150,7 @@
                     <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Notre Approche Collaborative</h2>
                     <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-300">Un processus clair et transparent pour garantir le succès de votre projet à chaque étape.</p>
                 </div>
-
                 <div class="grid gap-y-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-8 text-center">
-                    
                     <!-- Étape 1 -->
                     <div>
                         <!-- Le cercle a maintenant un effet "verre dépoli" -->

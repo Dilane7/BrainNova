@@ -63,102 +63,110 @@
         </section>
 
         <!-- =========== Section Services =========== -->
-        <section id="services" class="pb-10 pt-20 bg-gradient-to-b from-[#000C1B] to-[#0B4783] ">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
+        <section id="services" class=" relative isolate py-20">
+            
+            <div class="absolute inset-0 -z-10">
+                <img class="h-full w-full object-cover" 
+                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" 
+                    alt="Espace de travail moderne en arrière-plan">
+                
+                <!-- Overlay pour assombrir et assurer la lisibilité -->
+                <div class="absolute inset-0 bg-black/25"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+                <div class="mt-8 py-15   border-t border-gray-700 text-center text-base">
+                </div>
+                <div class="text-center mb-16">
                     <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Nos Services</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-lg text-white">
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-200">
                         Votre Partenaire Digital Tout-en-Un.
                     </p>
                 </div>
                 
-                <div class="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3 mx-auto px-4 sm:px-6 lg:px-15">
-                    <!-- Service 1: Développement Web -->
-                    <div class="text-white bg-[#0B4783] p-8 rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-300 ">
-                        <div class="flex items-center justify-center h-15 w-15 rounded-md bg-[#316FB5] text-white">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                <!-- Grille principale des services -->
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    
+                    <!-- Carte Service 1: Développement Web -->
+                    <div class="flex flex-col rounded-2xl bg-white/5 shadow-md shadow-[#316FB5] p-8 backdrop-blur-md ring-1 ring-white/10 transition-all duration-300 hover:bg-white/15">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-[#316FB5] text-white flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
                         </div>
-                        <h3 class="mt-5 text-xl font-semibold  ">Développement Web sur Mesure</h3>
-                        <p class="mt-2 text-base ">Sites performants, sécurisés et optimisés pour l'expérience utilisateur. Du site vitrine à l'e-commerce.</p>
-                        <a class="flex   pt-2 ">
-                            <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-2">
-                                <span class="text-md font-semibold  py-1  ">Voir plus</span>
-                                <img src="{{asset('assets/img/right-up.png')}}" class="h-5" alt="">
-                            </span>
-                            
-                        </a>
-                    </div>
-                    <!-- Service 2: Design Graphique -->
-                    <div class="bg-[#0B4783] text-white p-8 rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-300">
-                        <div class="flex items-center justify-center h-15 w-15 rounded-md bg-[#EC673D] text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
-                        </div>
-                        <h3 class="mt-5 text-xl font-semibold ">Design Graphique & Identité Visuelle</h3>
-                        <p class="mt-2 text-base ">Des identités visuelles percutantes et des supports qui captivent votre audience et racontent votre histoire.</p>
-                        <a class="flex pt-2 mt-6">
-                            <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-2">
-                                <span class="text-md font-semibold  py-1  ">Voir plus</span>
-                                <img src="{{asset('assets/img/right-up.png')}}" class="h-5" alt="">
+                        <h3 class="mt-5 text-xl font-semibold text-white">Développement Web sur Mesure</h3>
+                        <p class="mt-2 text-base text-gray-300 flex-grow">Sites performants, sécurisés et optimisés pour l'expérience utilisateur. Du site vitrine à l'e-commerce.</p>
+                        <a href="#" class="mt-6 self-start">
+                            <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-yellow-300 transition-colors">
+                                <span>Voir plus</span>
+                                <img src="{{asset('assets/img/right-up.png')}}" class="h-4" alt="Icône flèche">
                             </span>
                         </a>
                     </div>
-                    <!-- Service 3: Marketing Digital -->
-                    <div class="bg-[#0B4783] text-white p-8 rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-300">
-                        <div class="flex items-center justify-center h-15 w-15 rounded-md bg-[#FDC416] text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+
+                    <!-- Carte Service 2: Design Graphique -->
+                    <div class="flex flex-col rounded-2xl bg-white/5 shadow-md shadow-[#316FB5] p-8 backdrop-blur-md ring-1 ring-white/10 transition-all duration-300 hover:bg-white/15">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-[#EC673D] text-white flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
                         </div>
-                        <h3 class="mt-5 text-xl font-semibold ">Stratégie Marketing Digital</h3>
-                        <p class="mt-2 text-base ">Augmentez votre trafic, générez des leads qualifiés et fidélisez votre clientèle grâce au SEO et aux publicités en ligne.</p>
-                        <a class="flex pt-2 mt-6">
-                            <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-2">
-                                <span class="text-md font-semibold  py-1  ">Voir plus</span>
-                                <img src="{{asset('assets/img/right-up.png')}}" class="h-5" alt="">
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-2 mx-auto px-4 sm:px-6 lg:px-15">
-                    <!-- Service 4: Hébergement & services web -->
-                    <div class="text-white bg-[#0B4783] p-8 rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-300 ">
-                        <div class="flex items-center justify-center h-15 w-15 rounded-md bg-[#316FB5] text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewB                           ox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                            </svg>
-                        </div>
-                        <h3 class="mt-5 text-xl font-semibold  ">Hébergement & services web</h3>
-                        <p class="mt-2 text-base ">Assurez à votre site une présence en ligne fiable, rapide et sécurisée. Nous nous occupons de toute la complexité technique, de l'hébergement optimisé à la maintenance proactive.</p>
-                        <a class="flex mt-5 pt-2 ">
-                            <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-2">
-                                <span class="text-md font-semibold  py-1  ">Voir plus</span>
-                                <img src="{{asset('assets/img/right-up.png')}}" class="h-5" alt="">
-                            </span>
-                            
-                        </a>
-                    </div>
-                    <!-- Service 5: Impression & objets publicitaires -->
-                    <div class="bg-[#0B4783] text-white p-8 rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-300">
-                        <div class="flex items-center justify-center h-15 w-15 rounded-md bg-[#EC673D] text-white">
-                           <!-- Icône Document avec Texte -->
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                            </svg>
-                        </div>
-                        <h3 class="mt-5 text-xl font-semibold ">Impression & objets publicitaires</h3>
-                        <p class="mt-2 text-base ">Transformez votre marque en une expérience tangible. De la carte de visite élégante au textile personnalisé, nous donnons vie à votre identité visuelle sur tous les supports pour marquer les esprits et laisser une impression durable.</p>
-                        <a class="flex pt-2 mt-6">
-                            <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-2">
-                                <span class="text-md font-semibold  py-1  ">Voir plus</span>
-                                <img src="{{asset('assets/img/right-up.png')}}" class="h-5" alt="">
+                        <h3 class="mt-5 text-xl font-semibold text-white">Design Graphique & Identité Visuelle</h3>
+                        <p class="mt-2 text-base text-gray-300 flex-grow">Des identités visuelles percutantes et des supports qui captivent votre audience et racontent votre histoire.</p>
+                        <a href="#" class="mt-6 self-start">
+                            <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-yellow-300 transition-colors">
+                                <span>Voir plus</span>
+                                <img src="{{asset('assets/img/right-up.png')}}" class="h-4" alt="Icône flèche">
                             </span>
                         </a>
                     </div>
                     
+                    <!-- Carte Service 3: Marketing Digital -->
+                    <div class="flex flex-col rounded-2xl bg-white/5 shadow-md shadow-[#316FB5] p-8 backdrop-blur-md ring-1 ring-white/10 transition-all duration-300 hover:bg-white/15">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-[#FDC416] text-white flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                        </div>
+                        <h3 class="mt-5 text-xl font-semibold text-white">Stratégie Marketing Digital</h3>
+                        <p class="mt-2 text-base text-gray-300 flex-grow">Augmentez votre trafic, générez des leads qualifiés et fidélisez votre clientèle grâce au SEO et aux publicités en ligne.</p>
+                        <a href="#" class="mt-6 self-start">
+                            <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-yellow-300 transition-colors">
+                                <span>Voir plus</span>
+                                <img src="{{asset('assets/img/right-up.png')}}" class="h-4" alt="Icône flèche">
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- Carte Service 4: Hébergement & services web -->
+                    <div class="flex flex-col rounded-2xl bg-white/5 shadow-md shadow-[#316FB5] p-8 backdrop-blur-md ring-1 ring-white/10 transition-all duration-300 hover:bg-white/15">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-gray-800 text-white flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" /></svg>
+                        </div>
+                        <h3 class="mt-5 text-xl font-semibold text-white">Hébergement & services web</h3>
+                        <p class="mt-2 text-base text-gray-300 flex-grow">Assurez à votre site une présence en ligne fiable, rapide et sécurisée. Nous nous occupons de toute la complexité technique.</p>
+                        <a href="#" class="mt-6 self-start">
+                            <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-yellow-300 transition-colors">
+                                <span>Voir plus</span>
+                                <img src="{{asset('assets/img/right-up.png')}}" class="h-4" alt="Icône flèche">
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <!-- Carte Service 5: Impression & objets publicitaires -->
+                    <div class="flex flex-col rounded-2xl bg-white/5 shadow-md shadow-[#316FB5] p-8 backdrop-blur-md ring-1 ring-white/10 transition-all duration-300 hover:bg-white/15 lg:col-span-2">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-gray-500 text-white flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12m10.5-11.25h.008v.008h-.008V8.25zm0 3.75h.008v.008h-.008v-.008zm0 3.75h.008v.008h-.008v-.008zM10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
+                        </div>
+                        <h3 class="mt-5 text-xl font-semibold text-white">Impression & objets publicitaires</h3>
+                        <p class="mt-2 text-base text-gray-300 flex-grow">Transformez votre marque en une expérience tangible avec des supports qui marquent les esprits et laissent une impression durable.</p>
+                        <a href="#" class="mt-6 self-start">
+                            <span class="bg-[#FDC416] flex items-center rounded-md gap-2 px-3 py-1.5 text-sm font-semibold text-gray-900 hover:bg-yellow-300 transition-colors">
+                                <span>Voir plus</span>
+                                <img src="{{asset('assets/img/right-up.png')}}" class="h-4" alt="Icône flèche">
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- ======================= Section Nos Réalisations avec Carrousel ======================= -->
-        <section id="realisations" class="bg-gradient-to-b from-[#0c355e] to-[#0B4783] py-10 lg:pb-20 lg:pt-20">
+        <section id="realisations" class="bg-gray-900 py-10 lg:pb-20 lg:pt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
                 
                 <div class="text-center mb-12">
@@ -249,109 +257,105 @@
             </div>
         </section>
 
-        
-
         <!-- ======================= Section Témoignages ======================= -->
-<section class="relative isolate bg-gray-900  py-10 sm:py-10">
+        <section class="relative isolate bg-gray-900  py-10 sm:py-10">
 
-    <!-- Image de fond et overlay -->
-    <div class="absolute inset-0 -z-10">
-        <img class="h-full w-full object-cover" 
-             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" 
-             alt="Environnement de travail professionnel en arrière-plan">
-        
-        <!-- Overlay pour assombrir et assurer la lisibilité -->
-        <div class="absolute inset-0 bg-black/35"></div>
-    </div>
-
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-                <div class="text-center pt-15 mb-15">
-                    <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Ce que disent nos clients</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-lg text-white">
-                        La confiance est au cœur de chaque projet. Voici ce que certains de nos partenaires pensent de notre collaboration.
-                    </p>
-                </div>
-
-                <!-- Structure du Carrousel de Témoignages -->
-                <div class="swiper testimonials-carousel-single  overflow-hidden">
-                    <div class="swiper-wrapper">
-
-                        <!-- Témoignage 1 -->
-                        <div class="swiper-slide">
-                            <!-- Conteneur pour centrer la carte -->
-                            <div class="mx-auto max-w-3xl">
-                                <figure class="flex flex-col shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl  p-8 md:p-8 text-center">
-                                    <img class="h-25 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/Logo entreprise VFT.png')}}" alt="Logo de l'entreprise cliente 1">
-                                    
-                                    <blockquote class="flex-grow">
-                                        <p class="text-lg  leading-relaxed text-white italic">
-                                            "Brainnova a grandement contribué à notre visibilité à travers des visuels publicitaires percutants et des campagnes Facebook efficaces. Leur professionnalisme, le respect des délais et la qualité du travail sont irréprochables. Nous recommandons vivement leurs services."
-                                        </p>
-                                    </blockquote>
-
-                                    <figcaption class="mt-5">
-                                        <div class="font-semibold text-lg text-[#EC673D]">Mr Roger Ongono</div>
-                                        <div class="text-base text-white/70">Promoteur, Entreprise VFT – Douala</div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- Témoignage 2 -->
-                        <div class="swiper-slide">
-                            <!-- Conteneur pour centrer la carte -->
-                            <div class="mx-auto max-w-3xl">
-                                <figure class="flex flex-col shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl  p-8 md:p-12 text-center">
-                                    <img class="h-20 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/logo TIKEU GROUP.jpg')}}" alt="Logo de l'entreprise cliente 2">
-                                    
-                                    <blockquote class="flex-grow">
-                                        <p class="text-lg  leading-relaxed text-white italic">
-                                            " Nous faisons régulièrement appel à Brainnova pour la création de visuels, flyers et cartes personnalisées pour nos événements. La qualité d’impression, la créativité graphique et le respect des délais sont toujours au rendez-vous. Un partenaire de confiance qui valorise chacun de nos projets"
-                                        </p>
-                                    </blockquote>
-                                    
-                                    <figcaption class="mt-5">
-                                        <div class="font-semibold text-lg text-[#EC673D]">M. TIKEU Gildas Peguy</div>
-                                        <div class="text-base text-white/70">Promoteur, TIKEU GROUP – Douala</div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- Témoignage 3 -->
-                        <div class="swiper-slide">
-                            <!-- Conteneur pour centrer la carte -->
-                            <div class="mx-auto max-w-3xl">
-                                <figure class="flex flex-col shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl  p-8 md:p-12 text-center">
-                                    <img class="h-20 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/logo entreprise tnconstruction.png')}}" alt="Logo de l'entreprise cliente 3">
-                                    
-                                    <blockquote class="flex-grow">
-                                        <p class="text-lg leading-relaxed text-white italic">
-                                            "Grâce à Brainnova, notre entreprise bénéficie désormais d’un site internet moderne, fluide et professionnel. Leur accompagnement en communication visuelle et la gestion efficace de nos pages Facebook ont considérablement renforcé notre image de marque. Une équipe sérieuse, créative et orientée résultats."
-                                        </p>
-                                    </blockquote>
-                                    
-                                    <figcaption class="mt-5">
-                                        <div class="font-semibold text-lg text-[#EC673D]">M. NKAMENI TIENTCHEU</div>
-                                        <div class="text-base text-white/70">Promoteur, TN Construction – Douala</div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                    </div>
-                    
-                    <div class="swiper-button-prev-single -left-2 md:-left-6 w-12 h-12 text-white/80 hover:text-gray-900 transition"></div>
-                    <div class="swiper-button-next-single -right-2 md:-right-6 w-12 h-12 text-white/80 hover:text-white transition"></div>
-                    
-            
-                </div>
-                <div class="swiper-pagination-single text-center"></div>
+            <!-- Image de fond et overlay -->
+            <div class="absolute inset-0 -z-10">
+                <img class="h-full w-full object-cover" 
+                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" 
+                    alt="Environnement de travail professionnel en arrière-plan">
+                
+                <!-- Overlay pour assombrir et assurer la lisibilité -->
+                <div class="absolute inset-0 bg-black/35"></div>
             </div>
-</section>
 
-        
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+                        <div class="text-center pt-15 mb-15">
+                            <h2 class="text-3xl font-bold tracking-tight text-[#EC673D] sm:text-4xl">Ce que disent nos clients</h2>
+                            <p class="mt-4 max-w-2xl mx-auto text-lg text-white">
+                                La confiance est au cœur de chaque projet. Voici ce que certains de nos partenaires pensent de notre collaboration.
+                            </p>
+                        </div>
+
+                        <!-- Structure du Carrousel de Témoignages -->
+                        <div class="swiper testimonials-carousel-single  overflow-hidden">
+                            <div class="swiper-wrapper">
+
+                                <!-- Témoignage 1 -->
+                                <div class="swiper-slide">
+                                    <!-- Conteneur pour centrer la carte -->
+                                    <div class="mx-auto max-w-3xl">
+                                        <figure class="flex flex-col shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl  p-8 md:p-8 text-center">
+                                            <img class="h-25 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/Logo entreprise VFT.png')}}" alt="Logo de l'entreprise cliente 1">
+                                            
+                                            <blockquote class="flex-grow">
+                                                <p class="text-lg  leading-relaxed text-white italic">
+                                                    "Brainnova a grandement contribué à notre visibilité à travers des visuels publicitaires percutants et des campagnes Facebook efficaces. Leur professionnalisme, le respect des délais et la qualité du travail sont irréprochables. Nous recommandons vivement leurs services."
+                                                </p>
+                                            </blockquote>
+
+                                            <figcaption class="mt-5">
+                                                <div class="font-semibold text-lg text-[#EC673D]">Mr Roger Ongono</div>
+                                                <div class="text-base text-white/70">Promoteur, Entreprise VFT – Douala</div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Témoignage 2 -->
+                                <div class="swiper-slide">
+                                    <!-- Conteneur pour centrer la carte -->
+                                    <div class="mx-auto max-w-3xl">
+                                        <figure class="flex flex-col shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl  p-8 md:p-12 text-center">
+                                            <img class="h-20 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/logo TIKEU GROUP.jpg')}}" alt="Logo de l'entreprise cliente 2">
+                                            
+                                            <blockquote class="flex-grow">
+                                                <p class="text-lg  leading-relaxed text-white italic">
+                                                    " Nous faisons régulièrement appel à Brainnova pour la création de visuels, flyers et cartes personnalisées pour nos événements. La qualité d’impression, la créativité graphique et le respect des délais sont toujours au rendez-vous. Un partenaire de confiance qui valorise chacun de nos projets"
+                                                </p>
+                                            </blockquote>
+                                            
+                                            <figcaption class="mt-5">
+                                                <div class="font-semibold text-lg text-[#EC673D]">M. TIKEU Gildas Peguy</div>
+                                                <div class="text-base text-white/70">Promoteur, TIKEU GROUP – Douala</div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Témoignage 3 -->
+                                <div class="swiper-slide">
+                                    <!-- Conteneur pour centrer la carte -->
+                                    <div class="mx-auto max-w-3xl">
+                                        <figure class="flex flex-col shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl  p-8 md:p-12 text-center">
+                                            <img class="h-20 w-auto mx-auto object-contain mb-5" src="{{asset('assets/img/logo entreprise tnconstruction.png')}}" alt="Logo de l'entreprise cliente 3">
+                                            
+                                            <blockquote class="flex-grow">
+                                                <p class="text-lg leading-relaxed text-white italic">
+                                                    "Grâce à Brainnova, notre entreprise bénéficie désormais d’un site internet moderne, fluide et professionnel. Leur accompagnement en communication visuelle et la gestion efficace de nos pages Facebook ont considérablement renforcé notre image de marque. Une équipe sérieuse, créative et orientée résultats."
+                                                </p>
+                                            </blockquote>
+                                            
+                                            <figcaption class="mt-5">
+                                                <div class="font-semibold text-lg text-[#EC673D]">M. NKAMENI TIENTCHEU</div>
+                                                <div class="text-base text-white/70">Promoteur, TN Construction – Douala</div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="swiper-button-prev-single -left-2 md:-left-6 w-12 h-12 text-white/80 hover:text-gray-900 transition"></div>
+                            <div class="swiper-button-next-single -right-2 md:-right-6 w-12 h-12 text-white/80 hover:text-white transition"></div>
+                            
+                    
+                        </div>
+                        <div class="swiper-pagination-single text-center"></div>
+                    </div>
+        </section>
     </main>
 @endsection
 
