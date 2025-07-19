@@ -13,19 +13,19 @@
                         Des solutions créatives en <span class="font-medium"><strong>Développement Web</strong></span>,<span class="font-medium">  <strong>UI/UX Design</strong></span>, <span class="font-medium"><strong>Design Graphique</strong></span> et <span class="font-medium"><strong>Marketing Digital</strong></span> pour transformer votre présence en ligne et atteindre vos objectifs.
                     </p>
                     <div class="mt-8 flex justify-around ">
-                        <a href="{{ route('services') }}" class="bg-[#FDC416] group flex gap-2 items-center shadow-sm/80 shadow-white text-white px-3 py-3 rounded-full font-semibold text-md hover:border hover:text-[#FDC416] hover:border-[#FDC416] hover:bg-transparent ">
+                        <a href="{{ route('services') }}" class=" group flex gap-2 items-center shadow-sm shadow-[#FDC416] text-[#FDC416] px-2 py-2 rounded-lg font-semibold text-md hover:border hover:text-[#FDC416] hover:border-[#FDC416] hover:bg-transparent ">
                             <span>Découvrir nos services</span>
-                            <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-white text-[#FDC416] group-hover:text-white group-hover:bg-[#FDC416]">
+                            <div class="flex items-center  justify-center h-8 w-8 rounded-full  text-[#FDC416] group-hover:text-white group-hover:bg-[#FDC416]">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg>
                             </div>
                         </a>
-                        <a href="{{ asset('assets/pdf/Plaquette commerciale numerique Brain Nova.pdf') }}" download="Profil_Brain_Nova.pdf" class=" text-[#316FB5] shadow-md border-2 border-[#316FB5] flex gap-2 items-center  px-3 py-3 rounded-full font-semibold text-md  hover:text-[#316FB5] hover:bg-white  transition duration-300">
-                            <span>Télécharger le profil</span>
-                            <div class="flex items-center  justify-center h-8 w-8 rounded-full bg-[#316FB5] text-white">
+                        <a href="{{ route('services') }}" class=" group flex gap-2 items-center shadow-sm shadow-[#316FB5] text-[#316FB5] px-2 py-2 rounded-lg font-semibold text-md hover:border hover:text-[#316FB5] hover:border-[#316FB5] hover:bg-transparent ">
+                            <span>Demander un devis</span>
+                            <div class="flex items-center  justify-center h-8 w-8 rounded-full  text-[#316FB5] group-hover:text-white group-hover:bg-[#316FB5]">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg>
                             </div>
                         </a>

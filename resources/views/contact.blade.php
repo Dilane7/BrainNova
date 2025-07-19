@@ -56,7 +56,7 @@
             <!-- Colonne Droite : Formulaire -->
             <div class="mt-16 lg:mt-0 shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl p-10 lg:col-span-1">
                 <h2 class="text-2xl font-bold tracking-tight text-[#EC673D]">Envoyez-nous un message</h2>
-                <form action="{{-- route('contact.send') --}}" method="POST" class="mt-8 ">
+                <form action="{{ route('contact.send') }}" method="POST" class="mt-8 ">
                     @csrf
                     <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                         <div>
@@ -75,6 +75,12 @@
                             <label for="email" class="block text-md font-semibold leading-6 text-white">Email</label>
                             <div class="mt-2.5">
                                 <input type="email" name="email" id="email" autocomplete="email" required class="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#EC673D] sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="tel" class="block text-md font-semibold leading-6 text-white">Tel</label>
+                            <div class="mt-2.5">
+                                <input type="tel" name="tel" id="tel" autocomplete="tel" required class="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#EC673D] sm:text-sm sm:leading-6">
                             </div>
                         </div>
                         <div class="sm:col-span-2">

@@ -50,7 +50,7 @@
                             </span>
                         </div>
 
-                        <!-- Lien Réalisations -->
+                        <!-- Lien a propos -->
                         <div class="relative group">
                             <a class="transition-colors duration-300 font-semibold py-2 {{ request()->routeIs('apropos') ? 'text-[#EC673D] font-semibold' : 'text-[#4A7DC7] hover:text-[#EC673D]' }}" 
                             href="{{ route('apropos') }}">
@@ -71,15 +71,25 @@
                                         {{ request()->routeIs('contact') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}">
                             </span>
                         </div>
+                        
                     </div>
                 </div>
+                 
                 <!-- Bouton CTA (Desktop) -->
                 <div class="hidden md:block">
-                    <div class="flex items-center space-x-2 bg-[#316FB5] text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-white hover:text-[#316FB5] hover:border hover:border-[#316FB5] transition duration-300">
-                        <a href="{{ asset('assets/pdf/Plaquette commerciale numerique Brain Nova.pdf') }}" download="Profil_Brain_Nova.pdf" class="">Télécharger le profil </a>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative group ">
+                        <a class="transition-colors text-white  duration-300 font-semibold py-2 shadow-md px-4 text-sm shadow-[#EC673D] border-1 border-[#EC673D]  backdrop-blur-sm rounded-md hover:bg-[#EC673D] hover:text-white" 
+                            href="{{ route('devis') }}">
+                            Demander un devis
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-2 bg-[#316FB5] shadow-sm shadow-[#316FB5] text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-white hover:text-[#316FB5] hover:border hover:border-[#316FB5] transition duration-300">
+                        <a href="{{ asset('assets/pdf/Plaquette commerciale numerique Brain Nova.pdf') }}" download="Profil_Brain_Nova.pdf" class="">Télécharger notre profil </a>
                         <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                         </svg>
+                    </div>
                     </div>
                 </div>
                 <!-- Menu Burger (Mobile) -->

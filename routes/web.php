@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ContactController;
 
 // // Assurez-vous d'avoir un contrôleur ou des vues correspondantes
 // Route::get('/', [PageController::class, 'home'])->name('home');
@@ -24,3 +25,9 @@ Route::get('/APropos', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
+Route::get('/devis', function () {
+    return view('devis');
+})->name('devis');
+
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
