@@ -1,19 +1,23 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PageController;
-use App\Http\Controllers\ContactController;
 use App\Http\Controllers\QuoteRequestController;
-
-// // Assurez-vous d'avoir un contrôleur ou des vues correspondantes
-// Route::get('/', [PageController::class, 'home'])->name('home');
-// Route::get('/services', [PageController::class, 'services'])->name('services');
-// Route::get('/realisations', [PageController::class, 'realisations'])->name('realisations');
-// Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+use App\Http\Controllers\Admin\QuoteDashboardController;
 
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
 Route::get('/services', function () {
     return view('services');
@@ -34,3 +38,11 @@ Route::get('/devis', function () {
 Route::get('/demande-devis', [QuoteRequestController::class, 'create'])->name('quote.create');
 // Traite le formulaire
 Route::post('/demande-devis', [QuoteRequestController::class, 'store'])->name('quote.store');
+
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+    Route::get('/devis', [QuoteDashboardController::class, 'index'])->name('quotes.index');
+    Route::get('/devis/{quote}', [QuoteDashboardController::class, 'show'])->name('quotes.show');
+});
+
+
+require __DIR__.'/auth.php';

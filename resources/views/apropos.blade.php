@@ -129,11 +129,11 @@
 <!-- ======================= Appel à l'Action Final ======================= -->
 <section class="bg-gray-900 border-b border-white/50">
     <div class="mx-auto max-w-7xl px-6 py-24 sm:py-20 lg:px-20">
-        <div class="relative isolate overflow-hidden px-6 py-15 text-center shadow-2xl rounded-3xl sm:px-16">
+        <div class="relative isolate overflow-hidden px-6 py-15 text-center shadow-[#316FB5] shadow-sm rounded-3xl sm:px-16">
             <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Prêt à construire l'avenir de votre marque avec nous ?</h2>
             <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Contactez-nous pour discuter de la manière dont nous pouvons vous aider à atteindre vos objectifs.</p>
             <div class="mt-10">
-                <a href="{{ route('contact') }}" class="rounded-md bg-[#FDC416] px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-yellow-400 focus-visible:outline  focus-visible:outline-offset-2 focus-visible:outline-yellow-500">
+                <a href="{{ route('quote.create') }}" class="rounded-md shadow-sm shadow-[#EC673D] px-5 py-3 text-[#EC673D] font-semibold   hover:border-1 hover:border-[#EC673D] focus-visible:outline  focus-visible:outline-offset-2 focus-visible:outline-yellow-500">
                     Discutons de votre projet
                 </a>
             </div>

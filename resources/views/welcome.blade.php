@@ -21,7 +21,7 @@
                                 </svg>
                             </div>
                         </a>
-                        <a href="{{ route('services') }}" class=" group flex gap-2 items-center shadow-sm shadow-[#316FB5] text-[#316FB5] px-2 py-2 rounded-lg font-semibold text-md hover:border hover:text-[#316FB5] hover:border-[#316FB5] hover:bg-transparent ">
+                        <a href="{{ route('quote.create') }}" class=" group flex gap-2 items-center shadow-sm shadow-[#316FB5] text-[#316FB5] px-2 py-2 rounded-lg font-semibold text-md hover:border hover:text-[#316FB5] hover:border-[#316FB5] hover:bg-transparent ">
                             <span>Demander un devis</span>
                             <div class="flex items-center  justify-center h-8 w-8 rounded-full  text-[#316FB5] group-hover:text-white group-hover:bg-[#316FB5]">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

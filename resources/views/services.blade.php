@@ -11,7 +11,7 @@
                     Que vous ayez besoin d'un site web performant, d'une identité visuelle percutante ou d'une stratégie marketing pour atteindre vos clients, nos services sont conçus pour s'intégrer parfaitement et générer des résultats concrets.
                 </p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="{{route('contact')}}" class="rounded-md bg-[#316FB5] px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-700  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                    <a href="{{route('quote.create')}}" class="rounded-md bg-[#316FB5] px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-gray-900 hover:shadow-[#316FB5] hover:shadow-sm  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
                         Discutons de votre projet
                     </a>
                     <a href="#details-services" class="text-base font-semibold leading-6 text-[#EC673D]">
@@ -178,6 +178,20 @@
                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-white/10 backdrop-blur-sm text-[#4A7DC7]  text-2xl font-bold mx-auto mb-4 ring-1 ring-white/20">04</div>
                         <h4 class="text-xl font-semibold mb-2 text-[#FDC416]">Lancement & Croissance</h4>
                         <p class="text-gray-300">Nous vous accompagnons après la mise en ligne pour assurer le suivi, la maintenance et la croissance continue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======================= Appel à l'Action Final ======================= -->
+        <section class="bg-gray-900 border-b border-white/50">
+            <div class="mx-auto max-w-7xl px-6 py-24 sm:py-20 lg:px-20">
+                <div class="relative isolate overflow-hidden px-6 py-15 text-center shadow-[#316FB5] shadow-sm rounded-3xl sm:px-16">
+                    <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Prêt à construire l'avenir de votre marque avec nous ?</h2>
+                    <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Contactez-nous pour discuter de la manière dont nous pouvons vous aider à atteindre vos objectifs.</p>
+                    <div class="mt-10">
+                        <a href="{{ route('quote.create') }}" class="rounded-md shadow-sm shadow-[#EC673D] px-5 py-3 text-[#EC673D] font-semibold   hover:border-1 hover:border-[#EC673D] focus-visible:outline  focus-visible:outline-offset-2 focus-visible:outline-yellow-500">
+                            Discutons de votre projet
+                        </a>
                     </div>
                 </div>
             </div>
