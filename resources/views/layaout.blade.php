@@ -80,7 +80,7 @@
                     <div class="flex items-center space-x-4">
                         <div class="relative group ">
                         <a class="transition-colors text-white  duration-300 font-semibold py-2 shadow-md px-4 text-sm shadow-[#EC673D] border-1 border-[#EC673D]  backdrop-blur-sm rounded-md hover:bg-[#EC673D] hover:text-white" 
-                            href="{{ route('devis') }}">
+                            href="{{ route('quote.create') }}">
                             Demander un devis
                         </a>
                     </div>

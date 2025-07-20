@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\QuoteRequestController;
 
 // // Assurez-vous d'avoir un contrôleur ou des vues correspondantes
 // Route::get('/', [PageController::class, 'home'])->name('home');
@@ -30,4 +31,6 @@ Route::get('/devis', function () {
     return view('devis');
 })->name('devis');
 
-Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+Route::get('/demande-devis', [QuoteRequestController::class, 'create'])->name('quote.create');
+// Traite le formulaire
+Route::post('/demande-devis', [QuoteRequestController::class, 'store'])->name('quote.store');

@@ -56,7 +56,7 @@
             <!-- Colonne Droite : Formulaire -->
             <div class="mt-16 lg:mt-0 shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl p-10 lg:col-span-1">
                 <h2 class="text-2xl font-bold tracking-tight text-[#EC673D]">Envoyez-nous un message</h2>
-                <form action="{{ route('contact.send') }}" method="POST" class="mt-8 ">
+                <form action="" method="POST" class="mt-8 ">
                     @csrf
                     <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                         <div>
@@ -111,5 +111,4 @@
         </div>
     </div>
 </div>
-
 @endsection

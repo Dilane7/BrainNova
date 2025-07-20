@@ -4,21 +4,21 @@
     <main>
         <section  class=" h-auto text-center py-12 w-full px-6 sm:px-6 lg:px-20 mx-auto bg-cover mt-20 bg-center" style="background-image: url('assets/img/bg.png') ">>
             <div class="mx-auto max-w-4xl py-15 text-center">
-            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                Des solutions digitales conçues pour <span class="text-[#EC673D]">votre croissance</span>
-            </h1>
-            <p class="mt-6 text-lg leading-8 text-white/90">
-                Que vous ayez besoin d'un site web performant, d'une identité visuelle percutante ou d'une stratégie marketing pour atteindre vos clients, nos services sont conçus pour s'intégrer parfaitement et générer des résultats concrets.
-            </p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="{{route('contact')}}" class="rounded-md bg-[#316FB5] px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-700  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
-                    Discutons de votre projet
-                </a>
-                <a href="#details-services" class="text-base font-semibold leading-6 text-[#EC673D]">
-                    Voir nos services en détail <span aria-hidden="true">→</span>
-                </a>
+                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                    Des solutions digitales conçues pour <span class="text-[#EC673D]">votre croissance</span>
+                </h1>
+                <p class="mt-6 text-lg leading-8 text-white/90">
+                    Que vous ayez besoin d'un site web performant, d'une identité visuelle percutante ou d'une stratégie marketing pour atteindre vos clients, nos services sont conçus pour s'intégrer parfaitement et générer des résultats concrets.
+                </p>
+                <div class="mt-10 flex items-center justify-center gap-x-6">
+                    <a href="{{route('contact')}}" class="rounded-md bg-[#316FB5] px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-700  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        Discutons de votre projet
+                    </a>
+                    <a href="#details-services" class="text-base font-semibold leading-6 text-[#EC673D]">
+                        Voir nos services en détail <span aria-hidden="true">→</span>
+                    </a>
+                </div>
             </div>
-        </div>
         </section>
 
         <section id="details-services" class=" relative isolate py-20 sm:py-24">
