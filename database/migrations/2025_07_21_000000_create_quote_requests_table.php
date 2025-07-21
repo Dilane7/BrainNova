@@ -6,15 +6,10 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
+    public function up()
     {
         Schema::create('quote_requests', function (Blueprint $table) {
             $table->id();
-            
-            // Infos Personnelles/Entreprise
             $table->string('first_name');
             $table->string('last_name');
             $table->string('company_name')->nullable();
@@ -25,30 +20,31 @@ return new class extends Migration
             $table->string('country');
             $table->string('email');
             $table->string('phone');
-
-            // Infos Projet
-            $table->json('services'); // On stocke les services cochés en format JSON
+            $table->json('services');
             $table->text('project_goal');
             $table->string('budget')->nullable();
             $table->string('start_delay');
             $table->text('description');
-            $table->string('file_path')->nullable(); // Chemin vers le cahier des charges
+            $table->string('file_path')->nullable();
             $table->boolean('has_worked_with_agency');
             $table->string('meeting_preference')->nullable();
-
-            // Consentement
             $table->boolean('accepts_offers');
             $table->boolean('accepts_policy');
+            // Ajout du champ status
+            $table->string('status')->default('Prospect');
+            // Ajout des champs internes
+            $table->string('internal_spec_file')->nullable();
+            $table->decimal('internal_budget', 10, 2)->nullable();
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
+            $table->string('team_members')->nullable();
+            $table->text('internal_notes')->nullable();
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('quote_requests');
-
     }
 };

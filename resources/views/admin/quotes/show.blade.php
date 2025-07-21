@@ -51,6 +51,8 @@
             </dl>
         </div>
 
+        
+
         <!-- Colonne de droite : Informations client et logistique -->
         <div class="space-y-8">
             <!-- Bloc Contact Client -->
@@ -78,6 +80,81 @@
                     @endif
                 </dl>
             </div>
+
+            
         </div>
     </div>
+
+    <!-- Bloc Informations internes -->
+            <div class="bg-white rounded-xl shadow p-6 mt-10">
+                <h3 class="text-lg font-bold text-[#316FB5] mb-4">Informations internes du projet</h3>
+                @if($quote->internal_spec_file || $quote->internal_budget || $quote->start_date || $quote->end_date || $quote->team_members || $quote->internal_notes)
+                    <div class="mb-6">
+                        <h4 class="text-md font-semibold text-[#316FB5] mb-2">Données enregistrées :</h4>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            @if($quote->internal_spec_file)
+                                <li>
+                                    <span class="font-medium">Cahier des charges interne :</span>
+                                    <a href="{{ Storage::url($quote->internal_spec_file) }}" target="_blank" class="text-[#316FB5] hover:text-[#FDC416] underline">
+                                        Télécharger
+                                    </a>
+                                </li>
+                            @endif
+                            @if($quote->internal_budget)
+                                <li><span class="font-medium">Budget :</span> {{ $quote->internal_budget }} €</li>
+                            @endif
+                            @if($quote->start_date)
+                                <li><span class="font-medium">Date de début :</span> {{ \Carbon\Carbon::parse($quote->start_date)->format('d/m/Y') }}</li>
+                            @endif
+                            @if($quote->end_date)
+                                <li><span class="font-medium">Date de fin :</span> {{ \Carbon\Carbon::parse($quote->end_date)->format('d/m/Y') }}</li>
+                            @endif
+                            @if($quote->team_members)
+                                <li><span class="font-medium">Équipe projet :</span> {{ $quote->team_members }}</li>
+                            @endif
+                            @if($quote->internal_notes)
+                                <li><span class="font-medium">Notes internes :</span> {{ $quote->internal_notes }}</li>
+                            @endif
+                        </ul>
+                    </div>
+                @endif
+                <form action="{{ route('admin.quotes.internal.update', $quote) }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @method('PATCH')
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Cahier des charges interne (fichier)</label>
+                        <input type="file" name="internal_spec_file" class="w-full rounded border-gray-300">
+                        @if($quote->internal_spec_file)
+                            <div class="mt-2">
+                                <a href="{{ Storage::url($quote->internal_spec_file) }}" target="_blank" class="text-[#316FB5] hover:text-[#FDC416] underline">
+                                    Télécharger le cahier des charges interne actuel
+                                </a>
+                            </div>
+                        @endif
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Budget du travail (€)</label>
+                        <input type="number" name="internal_budget" class="w-full rounded border-gray-300" value="{{ old('internal_budget', $quote->internal_budget) }}">
+                    </div>
+                    <div class="mb-4 flex gap-4">
+                        <div class="flex-1">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Date de début</label>
+                            <input type="date" name="start_date" class="w-full rounded border-gray-300" value="{{ old('start_date', $quote->start_date) }}">
+                        </div>
+                        <div class="flex-1">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Date de fin</label>
+                            <input type="date" name="end_date" class="w-full rounded border-gray-300" value="{{ old('end_date', $quote->end_date) }}">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Membres de l'équipe projet</label>
+                        <input type="text" name="team_members" class="w-full rounded border-gray-300" value="{{ old('team_members', $quote->team_members) }}" placeholder="Ex: Alice, Bob, Charlie">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Notes internes</label>
+                        <textarea name="internal_notes" class="w-full rounded border-gray-300" rows="2">{{ old('internal_notes', $quote->internal_notes) }}</textarea>
+                    </div>
+                    <button type="submit" class="px-4 py-2 bg-[#316FB5] text-white rounded hover:bg-[#254e7e] transition">Enregistrer</button>
+                </form>
+            </div>
 @endsection

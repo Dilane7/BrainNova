@@ -44,6 +44,8 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
     Route::get('/devis', [QuoteDashboardController::class, 'index'])->name('quotes.index');
     Route::get('/devis/{quote}', [QuoteDashboardController::class, 'show'])->name('quotes.show');
+    Route::patch('/devis/{quote}/status', [QuoteDashboardController::class, 'updateStatus'])->name('quotes.updateStatus');
+    Route::patch('/devis/{quote}/internal', [QuoteDashboardController::class, 'updateInternal'])->name('quotes.internal.update');
 });
 
 

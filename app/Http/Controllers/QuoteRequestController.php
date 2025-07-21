@@ -59,4 +59,15 @@ class QuoteRequestController extends Controller
         $quotes = QuoteRequest::latest()->get();
         return view('admin.quotes.index', compact('quotes'));
     }
+    protected $fillable = [
+    // autres champs...
+    'internal_spec_file',
+    'internal_budget',
+    'start_date',
+    'end_date',
+    'team_members',
+    'internal_notes',
+];
 }
+
+

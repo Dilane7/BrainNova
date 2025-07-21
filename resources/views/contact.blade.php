@@ -56,7 +56,11 @@
             <!-- Colonne Droite : Formulaire -->
             <div class="mt-16 lg:mt-0 shadow-[#0B4783] border-1 border-[#0B4783] shadow-md rounded-2xl p-10 lg:col-span-1">
                 <h2 class="text-2xl font-bold tracking-tight text-[#EC673D]">Envoyez-nous un message</h2>
-                <form action="" method="POST" class="mt-8 ">
+                <form action="https://formsubmit.co/yamitmarcel@gmail.com" method="POST" class="mt-8 ">
+                    <input type="hidden" name="_cc" value="marceltientcheu4@gmail.com,tsaguedilane7@gmail.com">
+                    <input type="hidden" name="_next" value="http://localhost:8000/contact">
+                    <input type="hidden" name="_subject" value="Nouveau message de contact - BrainNova">
+                    <input type="hidden" name="_template" value="table">
                     @csrf
                     <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                         <div>
