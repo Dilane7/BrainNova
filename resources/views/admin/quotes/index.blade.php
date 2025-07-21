@@ -1,53 +1,41 @@
 {{-- resources/views/admin/quotes/index.blade.php --}}
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Demandes de Devis Reçues
-        </h2>
-    </x-slot>
+@extends('admin.layout')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    
-                    <div class="overflow-x-auto">
-                        <table class="min-w-full divide-y divide-gray-200">
-                            <thead class="bg-gray-50">
-                                <tr>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nom</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Sujet (Services)</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody class="bg-white divide-y divide-gray-200">
-                                @forelse ($quotes as $quote)
-                                    <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $quote->created_at->format('d/m/Y H:i') }}</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ $quote->first_name }} {{ $quote->last_name }}</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $quote->email }}</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ implode(', ', $quote->services) }}</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                            <a href="{{ route('admin.quotes.show', $quote->id) }}" class="text-indigo-600 hover:text-indigo-900">Voir</a>
-                                        </td>
-                                    </tr>
-                                @empty
-                                    <tr>
-                                        <td colspan="5" class="px-6 py-4 text-center text-sm text-gray-500">Aucune demande de devis pour le moment.</td>
-                                    </tr>
-                                @endforelse
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="mt-4">
-                        {{ $quotes->links() }}
-                    </div>
-
-                </div>
-            </div>
-        </div>
+@section('content')
+    <h2 class="text-2xl font-bold text-[#316FB5] mb-6">Liste des devis clients</h2>
+    <div class="overflow-x-auto bg-white rounded-xl shadow p-6">
+        <table class="min-w-full">
+            <thead>
+                <tr class="bg-[#316FB5]/10 text-[#316FB5]">
+                    <th class="px-4 py-2 text-left">Nom</th>
+                    <th class="px-4 py-2 text-left">Email</th>
+                    <th class="px-4 py-2 text-left">Téléphone</th>
+                    <th class="px-4 py-2 text-left">Date</th>
+                    <th class="px-4 py-2 text-left">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @forelse($quotes as $quote)
+                    <tr class="border-b hover:bg-[#FDC416]/10">
+                        <td class="px-4 py-2 align-middle">
+                            {{ $quote->first_name ?? '' }} {{ $quote->last_name ?? '' }}
+                        </td>
+                        <td class="px-4 py-2 align-middle">{{ $quote->email }}</td>
+                        <td class="px-4 py-2 align-middle">{{ $quote->phone }}</td>
+                        <td class="px-4 py-2 align-middle">{{ $quote->created_at->format('d/m/Y H:i') }}</td>
+                        <td class="px-4 py-2 align-middle">
+                            <a href="{{ route('admin.quotes.show', $quote) }}"
+                               class="inline-block px-3 py-1 bg-[#316FB5] text-white rounded hover:bg-[#254e7e] transition">
+                                Détails
+                            </a>
+                        </td>
+                    </tr>
+                @empty
+                    <tr>
+                        <td colspan="5" class="text-center text-gray-400 py-4">Aucun devis reçu.</td>
+                    </tr>
+                @endforelse
+            </tbody>
+        </table>
     </div>
-</x-app-layout>
+@endsection

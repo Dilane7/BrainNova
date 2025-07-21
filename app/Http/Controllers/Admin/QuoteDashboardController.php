@@ -18,4 +18,8 @@ class QuoteDashboardController extends Controller
     {
         return view('admin.quotes.show', compact('quote'));
     }
+    public function dashboard()
+    {
+        return view('admin.dashboard');
+    }
 }

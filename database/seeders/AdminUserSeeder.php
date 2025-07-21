@@ -10,16 +10,20 @@ class AdminUserSeeder extends Seeder
 {
     public function run(): void
     {
-        User::create([
-            'name' => 'Dilane TIWA',
-            'email' => 'tsaguedilane7.com',
-            'password' => Hash::make('BrainNova'), // Changez ce mot de passe !
-        ]);
+        User::updateOrCreate(
+            ['email' => 'tsaguedilane7@gmail.com'],
+            [
+                'name' => 'Dilane TIWA',
+                'password' => Hash::make('BrainNova'), // Changez ce mot de passe !
+            ]
+        );
 
-        User::create([
-            'name' => 'Marcel YAMI',
-            'email' => 'yamitmarcel@gmail.com',
-            'password' => Hash::make('BrainNova'), // Changez ce mot de passe !
-        ]);
+        User::updateOrCreate(
+            ['email' => 'yamitmarcel@gmail.com'],
+            [
+                'name' => 'Marcel YAMI',
+                'password' => Hash::make('BrainNova'), // Changez ce mot de passe !
+            ]
+        );
     }
 }

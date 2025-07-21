@@ -53,4 +53,10 @@ class QuoteRequestController extends Controller
         // 5. Redirection avec un message de succès
         return back()->with('success', 'Votre demande de devis a été envoyée avec succès ! Nous vous recontacterons très prochainement.');
     }
+
+    public function index()
+    {
+        $quotes = QuoteRequest::latest()->get();
+        return view('admin.quotes.index', compact('quotes'));
+    }
 }
